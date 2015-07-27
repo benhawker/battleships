@@ -10,7 +10,7 @@ let (:ship) {double(:ship)}
   end
 
   it "places a ship on the board" do
-  	subject.place (ship, "A1")
+  	subject.place(ship, "A1")
   	expect(subject.grid["A1"]).to eq "X"
 
   	# x = board.draw_board["A1"]
